@@ -3,14 +3,14 @@
 >A few weeks after starting his new role, Jeremy is approached by upper management about a special project. AutosRUs’ newest prototype, the MechaCar, is suffering from production troubles that are blocking the manufacturing team’s progress. AutosRUs’ upper management has called on Jeremy and the data analytics team to review the production data for insights that may help the manufacturing team.
 
 ## Linear Regression to Predict MPG
-![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/carSummary.png)
+![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/carSummary.png) <br><br>
 From the regression model, it is clear that ```vehicle_length``` and ```ground_clearance``` have provided none random amount of variance since the p-value for these two variables are strictly less than the alpha significance. The slope of this model should not be considered as zero since all variable have a corresponding coefficient (only 3 of them indicating the variable is not significant which can be considered zero). From the adjusted R-square, we know that this model has described 68.25% of the total popualtion (and the p-value for this model is 5.35e^-11) indicating this model is not the desired fit of the data.
 
 ## Summary Statistics on Suspension Coils
 #### sumary statistics of entire data frame
 ![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary.png)
 #### summary statistics by group
-![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png)
+![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png) <br><br>
 From the lot_summary, it is clear that cars under Lot3 manufacture line has exceed the requirement (variance of the suspension coils must not exceed 100 pounds per square inch)
 
 ## T-Tests on Suspension Coils
