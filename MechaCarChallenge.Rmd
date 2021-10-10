@@ -1,0 +1,51 @@
+---
+title: "MechaCarChallenge"
+output: html_document
+---
+
+```{r, echo=false}
+# import required libraries
+library(tidyverse)
+library(dplyr)
+```
+
+MPG Analysis
+```{r}
+cars <- read_csv('MechaCar_mpg.csv')
+cars
+```
+```{r}
+carModel <- cars %>% lm(mpg~vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data = .)
+carSummary <- summary(carModel)
+carSummary
+```
+1. vehicle_length, vehicle_weight and ground_clearance will have influence on mpg
+2. the slope of this mode is not zero since all variable have a coefficient
+3. the adjusted r-square indicating only 68.25% of teh population is being described
+
+Coil Analysis
+```{r}
+coil <- read_csv('Suspension_Coil.csv')
+coil
+```
+```{r}
+total_sumary <- coil %>% summarise(Mean = mean(PSI), Meidan = median(PSI), Variance = var(PSI), SD = sd(PSI))
+total_sumary
+```
+```{r}
+lot_summary <- coil %>% group_by(Manufacturing_Lot) %>% summarise(Mean = mean(PSI), Meidan = median(PSI), Variance = var(PSI), SD = sd(PSI))
+lot_summary
+```
+```{r}
+lot1 <- coil %>% subset(., Manufacturing_Lot == 'Lot1')
+lot2 <- coil %>% subset(., Manufacturing_Lot == 'Lot2')
+lot3 <- coil %>% subset(., Manufacturing_Lot == 'Lot3')
+```
+```{r}
+lot1 %>% t.test(.$PSI, mu = 1500, data = .)
+lot2 %>% t.test(.$PSI, mu = 1500, data = .)
+lot3 %>% t.test(.$PSI, mu = 1500, data = .)
+```
+
+
+
