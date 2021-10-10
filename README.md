@@ -9,9 +9,11 @@ From the regression model, it is clear that ```vehicle_length``` and ```ground_c
 ## Summary Statistics on Suspension Coils
 ##### sumary statistics of entire data frame
 ![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/total_summary.png) <br>
+From the ```total_summary```, it is clear that the variance of PSI for the entire data frame meets the requirement of not exceeding 100 pounds per square inch.
+
 ##### summary statistics by group
 ![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/lot_summary.png) <br>
-From the lot_summary, it is clear that cars under Lot3 manufacture line has exceed the requirement (variance of the suspension coils must not exceed 100 pounds per square inch)
+From the ```lot_summary```, it is clear that vehciles under Lot3 manufacture line has exceed the requirement (variance of the suspension coils must not exceed 100 pounds per square inch)
 
 ## T-Tests on Suspension Coils
 ##### Overall test statistics
