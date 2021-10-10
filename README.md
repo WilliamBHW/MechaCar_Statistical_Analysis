@@ -18,5 +18,5 @@ From the lot_summary, it is clear that cars under Lot3 manufacture line has exce
 ![]()
 
 #### PSI test statistics by Manufacturing_Lot
-![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/lot_test_statistics.png)
+![](https://github.com/WilliamBHW/MechaCar_Statistical_Analysis/blob/main/Resources/lot_test_statistics.png) <br>
 The p-value for Lot1, Lot2 and Lot3 is 1, 0.06072 and 0.04168 respectively. The t statistics indicate that Lot1 and Lot2 does not differ their mean PSI from 1500 statistically. Whereas Lot3 has p-value strictly less than the alpha significance level of 0.05 indicating the mean PSI is differ from 1500.
